@@ -25,6 +25,14 @@ namespace sh {
 			std::memset(components, 0, 32 * sizeof(void*));
 		};
 
+		inline Component *ofType(ComponentType type) {
+			return components[type];
+		}
+
+		inline bool checkType(ComponentType args...) {
+			
+		}
+
 	private:
 		friend class Scene;
 
